@@ -1,0 +1,149 @@
+/* register page */
+
+.blockRegister {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/Comment-tirer-le-meilleur-des-reseaux-sociaux-.webp');
+    background-size: cover;
+}
+
+
+/* block opacity register */
+
+.opacityBlockRegister {
+    width: 100%;
+    height: 100%;
+    /* background-color: #ffa60080; */
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+
+/* content register page */
+
+.content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0%;
+    display: flex;
+}
+
+
+/* block left register page */
+
+.blockLeftRegister {
+    width: 50%;
+}
+
+.welcomeTitleRegister {
+    font-family: roboto;
+    color: white;
+    font-size: 30px;
+    font-style: bold;
+    padding-top: 13%;
+}
+
+.welcomeTextRegister {
+    padding-top: 5%;
+    font-family: roboto;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* block right register page */
+
+.blockRightRegister {
+    margin-left: 5%;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.logoRegister {
+    width: 50px;
+}
+
+.blockFormRegister {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blockLogoRegister {
+    display: flex;
+    padding-top: 2%;
+}
+
+.blockLogoRegister p {
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10%;
+    padding-bottom: 2%;
+    font-size: 20px;
+}
+
+.blockFormRegister input {
+    &:focus {
+        /* border-color: #ffa600; */
+        border: none;
+    }
+    &:hover {
+        /* border-color: #ffa600; */
+        /* border: #ffa600 2px solid; */
+    }
+}
+
+.blockName {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameRegister {
+    margin-right: 10px;
+}
+
+.submitRegister {
+    background-color: #ffa600;
+    &:hover {
+        background-color: rgba(226, 150, 9, 0.808)
+    }
+}
+
+@media(width>=1400px) {
+    .welcomeTitleRegister {
+        font-size: 40px;
+    }
+    .welcomeTextRegister {
+        font-size: 25px;
+    }
+    .content {
+        padding-top: 5%;
+    }
+}
+
+
+/* properties if width viewport <= 1000px */
+
+@media(width <=1000px) {
+    .blockRegister {
+        height: auto;
+        padding-bottom: 5%;
+    }
+    .content {
+        display: block;
+        width: 90%;
+        padding-bottom: 5%;
+    }
+    .blockLeftRegister {
+        width: 100%;
+    }
+    .blockRightRegister {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blockName {
+        display: block;
+    }
+}
